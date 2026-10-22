@@ -1,9 +1,17 @@
-# Timber + Love Grok Bot prompts
+# timber-love-grok-bot-prompts
 
-Complete build pack for the 24-bot Grok company (Hank + 23 specialists).
+Timber + Love **Grok Bot** company — authoritative prompt pack (24 bots).
 
-- `PLAN.md` — full operating plan text (America/Boise)
-- `CREATE_ORDER.md` — wave activation order and sidebar groups
-- `bots/01-hank.md` … `bots/24-remy.md` — one file per bot with merged system prompt, recurring jobs, triggers, gates, and handoff formats
+Source of truth: `PLAN.md` (layout-preserving extract of the Operating Plan). Wherever the plan says **Grok Project**, treat as a **Grok Bot teammate** Jared will create.
 
-Primary host: Grok Bot for `admin@timberandlove.com`. Do not use xAI API, Composio Grok, or Cursor SDK bot hosting to create these bots.
+## Files
+
+- `PLAN.md` — full operating plan (amendments A1–A27 included)
+- `CREATE_ORDER.md` — activation waves + sidebar groups
+- `bots/NN-<name>.md` — one file per bot with metadata + **verbatim** Shared Preamble (rules 1–26) + Section 3 system prompt
+
+## Usage
+
+1. Follow `CREATE_ORDER.md` wave order.
+2. Open the matching `bots/*.md` file.
+3. Paste the fenced **Full Section 3 system prompt** into that Grok Bot teammate’s instructions.
