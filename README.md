@@ -14,4 +14,4 @@ Source of truth: `PLAN.md` (layout-preserving extract of the Operating Plan). Wh
 
 1. Follow `CREATE_ORDER.md` wave order.
 2. Open the matching `bots/*.md` file.
-3. Paste the fenced **Full Section 3 system prompt** into that Grok Bot teammate’s instructions.
+3. Paste the fenced **Full Section 3 system prompt** into that Grok Bot teammate's instructions.

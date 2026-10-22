@@ -1,123 +1,99 @@
-# CREATE_ORDER.md
+# CREATE_ORDER.md — Grok Bot teammate creation order + sidebar groups
 
-Creation order and sidebar groups for the Timber + Love Grok Bot company (24 bots).
-All schedules use timezone **America/Boise**.
+Wherever the plan says **Grok Project**, treat as a **Grok Bot teammate** Jared will create.
 
-Source: Operating Plan Section 9.1 Activation order, Section 2 Org Chart (Amendment A20), and roster order in Section 3.
+Source: PLAN.md Section 9.1 Activation order + Section 2 Org Chart (Amendment A20).
+All times America/Boise. Do not create bots out of wave order unless Jared overrides.
 
-## Sidebar groups (department folders)
+## Sidebar groups (Grok Bot UI)
 
-Create these sidebar groups, then place bots as listed.
+Group bots under these sidebar folders (department heads first within each group):
 
-| Sidebar group | Bots |
-|---------------|------|
-| CEO | Hank |
-| Operations and Governance | Larry (head), Mira, Ivy, Maya |
-| Finance and Compliance | Finn (head), Nora, Cora, Remy |
-| Design-Build Delivery | Walt (head), Cole, Dana |
-| Marketing and Growth | Omar (head), Quinn, Sage, Zoe, Priya |
-| Technology and Design | Kai (head), Ada, Sam |
-| Portfolio Entities | Rex (head), Stella |
-| Quality and Insight | Vera, Dash (independent; report to Hank) |
+1. **Operations and Governance** (head: Larry)
+   - Larry, Mira, Ivy, Maya
+2. **Finance and Compliance** (head: Finn)
+   - Finn, Nora, Cora, Remy
+3. **Design-Build Delivery** (head: Walt)
+   - Walt, Cole, Dana
+4. **Marketing and Growth** (head: Omar)
+   - Omar, Quinn, Sage, Zoe, Priya
+5. **Technology and Design** (head: Kai)
+   - Kai, Ada, Sam
+6. **Portfolio Entities** (head: Rex)
+   - Rex, Stella
+7. **Quality and Insight** (independent → Hank)
+   - Vera, Dash
+8. **CEO**
+   - Hank (sole Jared contact)
 
-Reporting rule: only the six department heads (Larry, Finn, Walt, Omar, Kai, Rex) plus Vera and Dash talk to Hank. Hank talks only to Jared.
+## Creation order (activation waves)
 
-## Wave activation order (create in this sequence)
+Create each as a separate Grok Bot teammate named exactly as listed. Standing instructions: paste the fenced system prompt from the matching `bots/NN-<name>.md` file (Shared Preamble rules 1–26 already included at the top).
 
-Compliance, access, and governance first; revenue-facing bots after their data and approval paths exist.
+### Wave 0 — Foundations (Days 0–3)
+Nothing runs without the queue, registry, audit log, Hank's Grok chat, verified connections, and the run-gate that wakes bots only on events or changes.
 
-### Wave 0 — Foundations (days 0–3)
+| Order | Bot | File | Notes |
+|------:|-----|------|-------|
+| 1 | Sam | `bots/05-sam.md` | Connections, vault, Workspace |
+| 2 | Kai | `bots/06-kai.md` | Queue and run-gate service (with Sam) |
+| 3 | Mira | `bots/03-mira.md` | Registry, memory |
+| 4 | Larry | `bots/02-larry.md` | Mission Control, scheduler inventory |
+| 5 | Hank | `bots/01-hank.md` | CEO; sole Jared contact |
+| 6 | Vera | `bots/20-vera.md` | Certification only at this wave |
 
-Nothing runs without the queue, registry, audit log, Hank's Grok chat, verified connections, and the run-gate.
-
-| Order | File | Bot | Notes |
-|------:|------|-----|-------|
-| 1 | `bots/05-sam.md` | Sam | Connections, vault, Login Broker |
-| 2 | `bots/06-kai.md` | Kai | Queue and run-gate service (partial) |
-| 3 | `bots/03-mira.md` | Mira | Registry and memory |
-| 4 | `bots/02-larry.md` | Larry | Mission Control and scheduler inventory |
-| 5 | `bots/01-hank.md` | Hank | CEO; Jared's only contact |
-| 6 | `bots/20-vera.md` | Vera | Certification only in Wave 0 |
-
-### Wave 1 — Protect (days 3–7)
-
+### Wave 1 — Protect (Days 3–7)
 Licensure clock, books visibility, and inbox control remove the biggest risks first.
 
-| Order | File | Bot | Notes |
-|------:|------|-----|-------|
-| 7 | `bots/08-cora.md` | Cora | Compliance and licensing |
-| 8 | `bots/07-nora.md` | Nora | Read-only books first |
-| 9 | `bots/09-ivy.md` | Ivy | Executive inbox and admin |
-| 10 | `bots/24-remy.md` | Remy | Receipts and invoice intake |
+| Order | Bot | File | Notes |
+|------:|-----|------|-------|
+| 7 | Cora | `bots/08-cora.md` | Compliance |
+| 8 | Nora | `bots/07-nora.md` | Read-only books first |
+| 9 | Ivy | `bots/09-ivy.md` | Executive inbox |
+| 10 | Remy | `bots/24-remy.md` | Receipts intake |
 
-### Wave 2 — Revenue core (days 7–14)
+### Wave 2 — Revenue core (Days 7–14)
+Leads, delivery, and estimating use the systems of record; Vera and Dash start once there is work and data to verify; Finn goes live only after Nora's books are readable and the eight finance go-live tests in Section 3.23 pass.
 
-Leads, delivery, and estimating use the systems of record. Vera and Dash start once there is work and data to verify. Finn goes live only after Nora's books are readable and the eight finance go-live tests in Section 3.23 pass.
+| Order | Bot | File | Notes |
+|------:|-----|------|-------|
+| 11 | Omar | `bots/12-omar.md` | Sales and leads |
+| 12 | Walt | `bots/10-walt.md` | Field ops |
+| 13 | Cole | `bots/11-cole.md` | Estimating |
+| 14 | Maya | `bots/04-maya.md` | Research |
+| 15 | Finn | `bots/22-finn.md` | Prepare-only at L1 until go-live tests |
+| 16 | Vera | `bots/20-vera.md` | Full QA (if not already live) |
+| 17 | Dash | `bots/21-dash.md` | Analytics / KPI layer |
+| 18 | Dana | `bots/23-dana.md` | Design and selections (A19; pairs with Walt/Cole) |
 
-| Order | File | Bot | Notes |
-|------:|------|-----|-------|
-| 11 | `bots/12-omar.md` | Omar | Sales and leads |
-| 12 | `bots/10-walt.md` | Walt | Field ops, subs, vendors |
-| 13 | `bots/11-cole.md` | Cole | Estimating and pricing |
-| 14 | `bots/23-dana.md` | Dana | Design and selections (Design-Build with Walt/Cole; required for delivery) |
-| 15 | `bots/04-maya.md` | Maya | Strategic research |
-| 16 | `bots/22-finn.md` | Finn | Prepare-only at L1 until go-live tests pass |
-| 17 | `bots/20-vera.md` | Vera | Full verification duties begin |
-| 18 | `bots/21-dash.md` | Dash | Analytics and attribution |
-
-### Wave 3 — Growth engines (days 14–21)
-
+### Wave 3 — Growth engines (Days 14–21)
 Paid and organic growth start once tracking and review gates are proven.
 
-| Order | File | Bot | Notes |
-|------:|------|-----|-------|
-| 19 | `bots/14-quinn.md` | Quinn | Paid media |
-| 20 | `bots/13-sage.md` | Sage | Search visibility |
-| 21 | `bots/17-ada.md` | Ada | UI, UX, CRO |
-| 22 | `bots/06-kai.md` | Kai | Full builds (second activation) |
+| Order | Bot | File | Notes |
+|------:|-----|------|-------|
+| 19 | Quinn | `bots/14-quinn.md` | Paid media |
+| 20 | Sage | `bots/13-sage.md` | Search visibility |
+| 21 | Ada | `bots/17-ada.md` | UI/UX/CRO |
+| 22 | Kai | `bots/06-kai.md` | Full builds (already created in Wave 0) |
 
-### Wave 4 — Brand and portfolio (days 21–30)
-
+### Wave 4 — Brand and portfolio (Days 21–30)
 Public-facing actions begin after Cora and Ada gates have run clean.
 
-| Order | File | Bot | Notes |
-|------:|------|-----|-------|
-| 23 | `bots/15-zoe.md` | Zoe | Moderation first; Pinterest pins after a clean week |
-| 24 | `bots/16-priya.md` | Priya | Content and copy |
-| 25 | `bots/19-rex.md` | Rex | Realty and BMH deal flow |
-| 26 | `bots/18-stella.md` | Stella | Stay With Us operations |
+| Order | Bot | File | Notes |
+|------:|-----|------|-------|
+| 23 | Zoe | `bots/15-zoe.md` | Moderation first; Pinterest pins after a clean week |
+| 24 | Priya | `bots/16-priya.md` | Content and copy |
+| 25 | Rex | `bots/19-rex.md` | Realty and BMH |
+| 26 | Stella | `bots/18-stella.md` | Stay With Us |
 
-## Roster numbering (files on disk)
+## Exact create-name list (24)
 
-Consistent with plan Section 3 roster order (Hank = 01, then specialists):
+Hank, Larry, Mira, Sam, Kai, Vera, Ivy, Nora, Cora, Remy, Omar, Walt, Cole, Maya, Finn, Dana, Dash, Quinn, Sage, Ada, Zoe, Priya, Rex, Stella
 
-| # | File | Bot |
-|--:|------|-----|
-| 01 | `bots/01-hank.md` | Hank |
-| 02 | `bots/02-larry.md` | Larry |
-| 03 | `bots/03-mira.md` | Mira |
-| 04 | `bots/04-maya.md` | Maya |
-| 05 | `bots/05-sam.md` | Sam |
-| 06 | `bots/06-kai.md` | Kai |
-| 07 | `bots/07-nora.md` | Nora |
-| 08 | `bots/08-cora.md` | Cora |
-| 09 | `bots/09-ivy.md` | Ivy |
-| 10 | `bots/10-walt.md` | Walt |
-| 11 | `bots/11-cole.md` | Cole |
-| 12 | `bots/12-omar.md` | Omar |
-| 13 | `bots/13-sage.md` | Sage |
-| 14 | `bots/14-quinn.md` | Quinn |
-| 15 | `bots/15-zoe.md` | Zoe |
-| 16 | `bots/16-priya.md` | Priya |
-| 17 | `bots/17-ada.md` | Ada |
-| 18 | `bots/18-stella.md` | Stella |
-| 19 | `bots/19-rex.md` | Rex |
-| 20 | `bots/20-vera.md` | Vera |
-| 21 | `bots/21-dash.md` | Dash |
-| 22 | `bots/22-finn.md` | Finn |
-| 23 | `bots/23-dana.md` | Dana |
-| 24 | `bots/24-remy.md` | Remy |
+(Matches PLAN.md activation logic; Dana is Wave 2 with Design-Build Delivery.)
 
-## Paste rule
+## Notes
 
-Each `bots/NN-<name>.md` **Full system prompt** section already includes the Shared Preamble merged with the role prompt (from `prompts/ready-to-paste/<name>.txt`). Paste that section into the bot's instructions in Grok Bot. Do not create bots via API from this pack.
+- Jared talks only to Hank. Department heads (Larry, Finn, Walt, Omar, Kai, Rex) plus Vera and Dash talk to Hank. All other bots report to their head.
+- Team Inbox Support (PLAN.md Section 3.22) is run by Ivy with specialists — not a 25th bot.
+- Cancel any automated create/connect attempts from prior agents; Jared creates teammates in the Grok Bot UI.
