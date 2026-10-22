@@ -1,0 +1,10 @@
+TIMBER + LOVE — GROK BOT COMPANY (24 bots)
+Mission Control: http://127.0.0.1:43127
+Drive: https://drive.google.com/drive/folders/1DQ7TsmnpJS0FmQtZTrmWJdjEMpXNH4QJ
+GitHub: https://github.com/webiq1206/timber-love-grok-bot-prompts
+
+Create each as a separate Grok Bot teammate named exactly:
+Hank, Larry, Mira, Sam, Kai, Vera, Ivy, Nora, Cora, Remy, Omar, Walt, Cole, Maya, Finn, Dana, Dash, Quinn, Sage, Ada, Zoe, Priya, Rex, Stella.
+
+Standing instructions live in prompts/<name>.txt in this repo (raw.githubusercontent.com).
+Hank = sole Jared contact. Larry = Mission Control queue.
